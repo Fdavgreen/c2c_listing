@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2C Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>C2C LISTING</h1>
+        <p>Fill out for C2C</p>
+    </div>
+    <div class="form-container">
+        <form id="c2cForm">
+            <div class="form-group">
+                <label for="agentName"></label>
+                <input type="text" id="agentName" name="agentName" placeholder="Agent Name" required>
+            </div>
+            <div class="form-group">
+                <label for="propertyAddress"></label>
+                <input type="text" id="propertyAddress" name="propertyAddress" placeholder="Property Address" required>
+            </div>
+            <div class="form-group">
+                <label for="city"></label>
+                <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            <div class="form-group">
+                <label for="sellerName"></label>
+                <input type="text" id="sellerName" name="sellerName" placeholder="Seller Name(s)" required>
+            </div>
+            <div class="form-group">
+                <label for="emails"></label>
+                <input type="email" id="emails" name="emails" placeholder="Emails" required>
+            </div>
+            <div class="form-group">
+                <label for="source"></label>
+                <input type="text" id="source" name="source" placeholder="Source" required>
+            </div>
+            <div class="form-group">
+                <label for="listPrice"></label>
+                <input type="number" id="listPrice" name="listPrice" placeholder="List Price" required>
+            </div>
+            <div class="form-group">
+                <label for="onMarketDate"></label>
+                <input type="text" id="onMarketDate" name="onMarketDate" class="date-input" placeholder="On Market Date" required>
+            </div>
+            <div class="form-group">
+                <label for="expirationDate"></label>
+                <input type="text" id="expirationDate" name="expirationDate" class="date-input" placeholder="Expiration Date" required>
+            </div>
+            <div class="form-group">
+                <label for="listingAgentCommission"></label>
+                <input type="number" id="listingAgentCommission" name="listingAgentCommission" placeholder="Listing Agent Commission %" required>
+            </div>
+            <div class="form-group">
+                <label for="sellingAgentCommission"></label>
+                <input type="number" id="sellingAgentCommission" name="sellingAgentCommission" placeholder="Selling Agent Commission %" required>
+            </div>
+            <div class="form-group">
+                <label for="vacant"></label>
+                <select id="vacant" name="vacant" required>
+                    <option value="">-Vacant-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="financingToExclude"></label>
+                <input type="text" id="financingToExclude" name="financingToExclude" placeholder="Financing to Exclude" required>
+            </div>
+            <div class="form-group">
+                <label for="titleCompany"></label>
+                <input type="text" id="titleCompany" name="titleCompany" placeholder="Title Company" required>
+            </div>
+            <div class="form-group">
+                <label for="hoa"></label>
+                <select id="hoa" name="hoa" required>
+                    <option value="">-HOA:-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="unsure">Unsure</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="existingSurvey"></label>
+                <select id="existingSurvey" name="existingSurvey" required>
+                    <option value="">-Existing Survey:-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="unsure">Unsure</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ahsSellerCoverage"></label>
+                <select id="ahsSellerCoverage" name="ahsSellerCoverage" required>
+                    <option value="">-AHS Seller Coverage:-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="needKeyBox"></label>
+                <select id="needKeyBox" name="needKeyBox" required>
+                    <option value="">-Need a key box?-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">SEND</button>
+        </form>
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="scripts.js"></script>
+</body>
+</html>
