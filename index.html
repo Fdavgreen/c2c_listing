@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +11,18 @@
         <h1>C2C LISTING</h1>
         <p>Fill out for C2C</p>
     </div>
+    
+    <!-- Form container -->
     <div class="form-container">
-        <form id="c2cForm">
+        <!-- Form starts here -->
+        <form id="c2cForm" action="send_form.php" method="post">
             <div class="form-group">
                 <label for="agentName"></label>
-                <input type="text" id="agentName" name="agentName" placeholder="Agent Name" required>
+                <input type="text" id="agentName" name="agent_name" placeholder="Agent Name" required>
             </div>
             <div class="form-group">
                 <label for="propertyAddress"></label>
-                <input type="text" id="propertyAddress" name="propertyAddress" placeholder="Property Address" required>
+                <input type="text" id="propertyAddress" name="property_address" placeholder="Property Address" required>
             </div>
             <div class="form-group">
                 <label for="city"></label>
@@ -28,7 +30,7 @@
             </div>
             <div class="form-group">
                 <label for="sellerName"></label>
-                <input type="text" id="sellerName" name="sellerName" placeholder="Seller Name(s)" required>
+                <input type="text" id="sellerName" name="seller_name" placeholder="Seller Name(s)" required>
             </div>
             <div class="form-group">
                 <label for="emails"></label>
@@ -40,23 +42,23 @@
             </div>
             <div class="form-group">
                 <label for="listPrice"></label>
-                <input type="number" id="listPrice" name="listPrice" placeholder="List Price" required>
+                <input type="number" id="listPrice" name="list_price" placeholder="List Price" required>
             </div>
             <div class="form-group">
                 <label for="onMarketDate"></label>
-                <input type="text" id="onMarketDate" name="onMarketDate" class="date-input" placeholder="On Market Date" required>
+                <input type="text" id="onMarketDate" name="on_market_date" class="date-input" placeholder="On Market Date" required>
             </div>
             <div class="form-group">
                 <label for="expirationDate"></label>
-                <input type="text" id="expirationDate" name="expirationDate" class="date-input" placeholder="Expiration Date" required>
+                <input type="text" id="expirationDate" name="expiration_date" class="date-input" placeholder="Expiration Date" required>
             </div>
             <div class="form-group">
                 <label for="listingAgentCommission"></label>
-                <input type="number" id="listingAgentCommission" name="listingAgentCommission" placeholder="Listing Agent Commission %" required>
+                <input type="number" id="listingAgentCommission" name="listing_agent_commission" placeholder="Listing Agent Commission %" required>
             </div>
             <div class="form-group">
                 <label for="sellingAgentCommission"></label>
-                <input type="number" id="sellingAgentCommission" name="sellingAgentCommission" placeholder="Selling Agent Commission %" required>
+                <input type="number" id="sellingAgentCommission" name="selling_agent_commission" placeholder="Selling Agent Commission %" required>
             </div>
             <div class="form-group">
                 <label for="vacant"></label>
@@ -68,11 +70,11 @@
             </div>
             <div class="form-group">
                 <label for="financingToExclude"></label>
-                <input type="text" id="financingToExclude" name="financingToExclude" placeholder="Financing to Exclude" required>
+                <input type="text" id="financingToExclude" name="financing_exclude" placeholder="Financing to Exclude" required>
             </div>
             <div class="form-group">
                 <label for="titleCompany"></label>
-                <input type="text" id="titleCompany" name="titleCompany" placeholder="Title Company" required>
+                <input type="text" id="titleCompany" name="title_company" placeholder="Title Company" required>
             </div>
             <div class="form-group">
                 <label for="hoa"></label>
@@ -85,7 +87,7 @@
             </div>
             <div class="form-group">
                 <label for="existingSurvey"></label>
-                <select id="existingSurvey" name="existingSurvey" required>
+                <select id="existingSurvey" name="existing_survey" required>
                     <option value="">-Existing Survey:-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
@@ -94,7 +96,7 @@
             </div>
             <div class="form-group">
                 <label for="ahsSellerCoverage"></label>
-                <select id="ahsSellerCoverage" name="ahsSellerCoverage" required>
+                <select id="ahsSellerCoverage" name="ahs_seller_coverage" required>
                     <option value="">-AHS Seller Coverage:-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
@@ -102,7 +104,7 @@
             </div>
             <div class="form-group">
                 <label for="needKeyBox"></label>
-                <select id="needKeyBox" name="needKeyBox" required>
+                <select id="needKeyBox" name="need_key_box" required>
                     <option value="">-Need a key box?-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
@@ -116,3 +118,4 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
